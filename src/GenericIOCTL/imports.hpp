@@ -9,12 +9,12 @@ EXTERN_C_START
 NTKERNELAPI NTSTATUS NTAPI MmCopyVirtualMemory
 (
 	IN  PEPROCESS		fromProcess,
-	IN  PVOID			fromAddress,
+	IN  PVOID		fromAddress,
 	IN  PEPROCESS		toProcess,
-	OUT PVOID			toAddress,
-	IN  SIZE_T			bufferSize,
+	OUT PVOID		toAddress,
+	IN  SIZE_T		bufferSize,
 	IN  KPROCESSOR_MODE	previousMode,
-	OUT PSIZE_T			numberOfBytesCopied
+	OUT PSIZE_T		numberOfBytesCopied
 );
 
 NTKERNELAPI PPEB NTAPI PsGetProcessPeb
